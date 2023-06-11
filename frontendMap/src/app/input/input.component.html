@@ -1,0 +1,10 @@
+<div class="userInputField d-flex justify-content-center mt-3">
+    <div class="input-group mb-3 input w-50">
+        <span class="input-group-text">Lat:</span>
+        <input #lat type="text" class="form-control" placeholder="Latitude" aria-label="Latitude" />
+        <span class="input-group-text">Long:</span>
+        <input #long type="text" class="form-control" placeholder="Longtiude" aria-label="Longtiude" />
+        <button class="btn btn-outline-secondary btn-dark" type="button" id="button-addon2"
+            (click)="setValue($event)">Search</button>
+    </div>
+</div>
