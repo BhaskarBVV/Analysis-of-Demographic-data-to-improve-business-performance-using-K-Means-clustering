@@ -1,0 +1,3 @@
+class Message:
+
+    healthy = "healthy"

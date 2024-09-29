@@ -1,0 +1,6 @@
+pandas
+flask
+requests
+flask_cors
+scikit-learn
+flask-restful-swagger-2
