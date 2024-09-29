@@ -30,7 +30,6 @@ def map_clusters(position_latitude, position_longitude):
         d2['items'].append(
             {'title': item['title'], 'label': label, 'distance': item['distance'], 'access': item['access'], 'position.lat': item['position']['lat'], 'position.lng': item['position']['lng'], 'address.postalCode': item['address']['postalCode'], 'id': item['id']})
     # # Counting no. of cafes, department stores and gyms
-    # df_final = d2[['position.lat', 'position.lng']]
     total = 0
     CafeList = []
     DepList = []
@@ -108,7 +107,6 @@ def map_clusters(position_latitude, position_longitude):
             [ds for ds in df_final['Department_Stores']],
             [gym for gym in df_final['Gyms']]]
 
-    # print(data)
 
     # Converting the 2d Lists into dataframe (each row for contains data for particular location)
     finalList = []
@@ -118,7 +116,6 @@ def map_clusters(position_latitude, position_longitude):
 
     df = pd.DataFrame(finalList, columns=[
         'position_lat', 'position_lng', 'Cafes', 'Department_Stores', 'Gyms'])
-    # print(df)
 
     # applying kmeans clustering
     try:
