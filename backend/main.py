@@ -1,9 +1,8 @@
 from flask import Flask, jsonify, request
 from flask_cors import CORS
 import pandas as pd
-from pandas.io.json import json_normalize
+from pandas import json_normalize
 import requests
-# from tabulate import tabulate
 from sklearn.cluster import KMeans
 
 app = Flask(__name__)
